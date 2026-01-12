@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Wedding of Azka & Kayla</title>
+  <meta name="description"
+    content="Undangan pernikahan Azka & Kayla — 13 Oktober 2029. Buka undangan pribadi: ?nama=Izul atau /Izul">
+  <meta property="og:title" content="Wedding - Azka & Kayla">
+  <meta property="og:description" content="Undangan pernikahan Azka & Kayla - 13 Oktober 2029">
+  <meta name="theme-color" content="#7a2f39">
+
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="shortcut icon" href="img/wedding-rings.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- QR lib -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- COVER -->
+    <section class="cover" id="cover">
+      <div class="cover-content">
+        <div class="top-meta">THE WEDDING OF</div>
+        <h1 class="cover-names">Azka<br> & <br>Kayla</h1>
+        <p class="cover-sub">Kepada Yth.<br><strong id="guestName">Bapak/Ibu/Saudara/i</strong></p>
+        <p class="cover-date">13 • 10 • 2029</p>
+
+        <div class="cover-actions">
+          <button id="openBtn" class="btn primary">💌 Buka Undangan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN - awalnya disembunyikan -->
+    <main id="main" class="main hidden" aria-hidden="true">
+
+      <!-- NAV (floating bottom) -->
+      <nav class="bottom-nav" role="navigation" aria-label="Menu undangan">
+        <button class="nav-item active" data-target="home"><i class="fa fa-home"></i><span>Opening</span></button>
+        <button class="nav-item" data-target="quotes"><i class="fa fa-feather"></i><span>Quotes</span></button>
+        <button class="nav-item" data-target="couple"><i class="fa fa-heart"></i><span>Mempelai</span></button>
+        <button class="nav-item" data-target="akad"><i class="fa fa-calendar-check"></i><span>Akad</span></button>
+        <button class="nav-item" data-target="gallery"><i class="fa-solid fa-image"></i><span>Gallery</span></button>
+        <button class="nav-item" data-target="thanks"><i
+            class="fa-solid fa-hand-holding-heart"></i><span>Thanks</span></button>
+      </nav>
+
+      <!-- HOME / HERO -->
+      <section id="home" class="section hero">
+        <img class="bg-overlay" src="img/cover.jpg" alt="" aria-hidden="true">
+        <div class="hero-inner">
+          <img src="img/1 (2).png" class="hero-photo" alt="Foto Mempelai">
+          <h2 class="hero-pre">The Wedding Of</h2>
+          <h1 class="hero-title">Azka & Kayla</h1>
+          <p class="hero-sub">Kami berharap Anda menjadi<br>bagian dari hari istimewa kami.</p>
+          <p class="cover-date">13 • 10 • 2029</p>
+
+          <!-- Countdown -->
+          <div id="countdown" class="countdown" data-target="2029-10-13T09:00:00+07:00" aria-live="polite">
+            <div class="segment">
+              <div class="value" id="cd-days">0</div>
+              <div class="label">Hari</div>
+            </div>
+            <div class="segment">
+              <div class="value" id="cd-hours">00</div>
+              <div class="label">Jam</div>
+            </div>
+            <div class="segment">
+              <div class="value" id="cd-mins">00</div>
+              <div class="label">Menit</div>
+            </div>
+            <div class="segment">
+              <div class="value" id="cd-secs">00</div>
+              <div class="label">Detik</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- QUOTES / AYAT -->
+      <section id="quotes" class="section">
+        <h3>Quotes</h3>
+        <img src="img/1.png" class="hero-flower" alt="Flower">
+        <p class="quote">“Pada akhirnya, hidup membawa kami kepada satu titik<br> di mana dua perjalanan yang berbeda
+          akhirnya bertemu.<br>Kami belajar bahwa cinta bukan hanya tentang menemukan<br>seseorang untuk hidup bersama, tetapi
+          menemukan<br>seseorang yang membuat hidup terasa lebih berarti.<br>Di hari yang penuh syukur ini, kami memilih untuk<br>
+          berjalan berdampingan, merangkai kisah<br>yang ingin kami abadikan selamanya …”</p>
+        <p class="qs">(Azka & Kayla)</p>
+      </section>
+
+      <!-- COUPLE -->
+      <section id="couple" class="section couple-section">
+        <h3>Mempelai</h3>
+        <div class="couple-grid">
+          <div class="couple-card">
+            <img src="img/groom 2.PNG" alt="Groom">
+            <h4>Muhammad <br>Azka Zulkarnain</h4>
+            <p>Putra Bapak :<br> M. Arsyad Zulkarnain & Ibu Isla Agnia Syaqila</p>
+          </div>
+          <div class="couple-card">
+            <img src="img/bride 2.PNG" alt="Bride">
+            <h4>Kayla <br>Ananda Salsabila</h4>
+            <p>Putri Bapak :<br> Samuel Arya Baskoro & Ibu Haba Salsabila Ustman</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- AKAD / RESEPSI -->
+      <section id="akad" class="section event-card">
+        <h3>Akad Nikah</h3>
+        <p>Sabtu</p>
+        <hr class="divider">
+        <h2>13</h2>
+        <hr class="divider">
+        <p><strong>Oktober 2029</strong> <br>• Pukul 09:00 WIB - Selesai</p>
+        <p>Alamat: <br>Ds Dayeuh Luhur Kec. Cimalaka Kab. Sumedang.</p>
+
+        <h3 id="resepsi" class="resepsi">Resepsi</h3>
+        <p>Sabtu</p>
+        <hr class="divider">
+        <h2>13</h2>
+        <hr class="divider">
+        <p><strong>Oktober 2029</strong> <br>• Pukul 10:00 WIB - Selesai</p>
+        <p>Alamat: <br>Ds Dayeuh Luhur Kec. Cimalaka Kab. Sumedang.</p>
+        <div class="map-wrap">
+          <!-- GANTI KEY di bawah jika mau pakai Google Maps Embed API -->
+          <iframe id="mapFrame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.2075753453614!2d107.91729867410558!3d-6.859455867108077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d10cffffffff%3A0x19d03fad311c1479!2sMasjid%20Agung%20Sumedang!5e1!3m2!1sen!2sid!4v1762131591171!5m2!1sen!2sid"
+            allowfullscreen loading="lazy"></iframe>
+          <div class="hero-actions">
+            <a href="https://maps.app.goo.gl/cyh2LrzWZCKKLcyd6" target="_blank" class="btnmaps"><i
+                class="fa-solid fa-location-dot"></i>
+              Lokasi Acara
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section">
+        <h3>Galeri</h3>
+        <div class="gallery-grid" id="galleryGrid">
+          <img class="g-item" src="img/foto1.jpg" data-full="img/foto1.jpg" alt="1">
+          <img class="g-item" src="img/foto1.jpg" data-full="img/foto1.jpg" alt="2">
+          <img class="g-item" src="img/foto1.jpg" data-full="img/foto1.jpg" alt="3">
+          <img class="g-item" src="img/foto1.jpg" data-full="img/foto1.jpg" alt="4">
+        </div>
+      </section>
+
+      <!-- GIFT -->
+      <section id="gift-section" class="section">
+        <h2 class="title-gift">Wedding Gift</h2>
+        <p class="gift-desc">
+          Doa restu Anda merupakan karunia <br>yang sangat berarti bagi kami.
+          Namun, <br>jika memberi adalah tanda kasih, Anda <br>dapat mengirimkan hadiah melalui:
+        </p>
+
+        <button class="gift-btn" id="showGiftBtn">Kirim Hadiah</button>
+        <div class="gift-box hidden" id="giftBox">
+          <div class="gift-account">
+            <h3>BANK BCA</h3>
+            <h4>Muhammad Azka Zulkarnain</h4>
+            <p class="rekeningNumber">1234567890</p>
+            <button class="copy-btn">
+              <i class="fa-solid fa-copy"></i> Salin Nomor
+            </button>
+          </div>
+
+          <div class="gift-account">
+            <h3>BANK BNI</h3>
+            <h4>Kayla Ananda Salsabila</h4>
+            <p class="rekeningNumber">0987654321</p>
+            <button class="copy-btn">
+              <i class="fa-solid fa-copy"></i> Salin Nomor
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- THANK YOU -->
+      <section id="thanks" class="section thankyou-section">
+          <div class="content">
+            <img src="img/1.png" alt="Foto Pasangan" class="profile-img">
+            <h2>TERIMAKASIH</h2>
+            <p>Telah menjadi bagian dari momen bahagia kami</p>
+            <h3>Azka <span>&</span> Kayla</h3>
+          </div>
+
+          <footer>
+            © 2030 Azka & Kayla Wedding. All Rights Reserved. <br>
+            Design By Ridwan Zulkarnain.
+          </footer>
+      </section>
+
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lbClose" class="lb-close" aria-label="Tutup">✕</button>
+      <img id="lbImg" src="" alt="gallery large">
+    </div>
+
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop preload="auto">
+      <source src="musik/Janji Suci Cover Saxophone - Yovie And Nuno.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicBtn" class="music-toggle" aria-pressed="false" title="Play / Pause">♪</button>
+
+    <!-- QR Modal (simple) -->
+    <div id="qrModal" class="modal" aria-hidden="true">
+      <div class="modal-inner">
+        <button class="modal-close" data-dismiss="modal">✕</button>
+        <div id="qrcode"></div>
+        <p id="qrUrl" class="mono"></p>
+        <div style="margin-top:12px">
+          <button id="copyLink" class="btn">Salin Link</button>
+          <a id="waShare" class="btn ghost" target="_blank" rel="noopener">Share WA</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Script utama -->
+  <script src="script.js" defer></script>
+</body>
+
+</html>
